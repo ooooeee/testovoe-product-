@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+h1 {
+    font-size: 36px;
+    position: relative;
+}
+
+section {
+    padding-top: 20px;
+}
+section h1 {
+    font-size: 36px;
+    position: relative;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+img {
+    pointer-events: none;
+    display: inline-block;
+    object-fit: cover;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+#sec-one {
+    padding-top: 0;
+    color: white;
+    font-weight: 700;
+    position: relative;
+}
+#sec-one video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+}
+#sec-one > div {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    font-size: 32px;
+}
+#sec-one > div li {
+    line-height: 1.3em;
+}
+#sec-one h1 {
+    z-index: 1;
+    position: relative;
+    padding: 50px 0 100px;
+}
+#sec-one img {
+    margin-right: 90px;
+}
+#sec-one button {
+    background-color: #441252;
+    border-radius: 26px;
+    color: #ffdc50;
+    font-weight: 700;
+    font-size: 24px;
+    height: 50px;
+    margin-top: 90px;
+    width: 100%;
+    z-index: 1;
+    width: 50%;
+    height: 50px;
+}
+#sec-one img {
+    height: 80%;
+}
+
+#sec_two {
+    background-color: #946fff;
+    display: flex;
+    justify-content: space-between;
+}
+#sec_two > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
+#sec_two > div img {
+    margin: 0 auto;
+}
+#sec_two h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    color: white;
+}
+#sec_two button {
+    background-color: #441252;
+    border-radius: 26px;
+    color: #ffdc50;
+    font-weight: 700;
+    font-size: 24px;
+    height: 50px;
+    margin-top: 90px;
+    width: 100%;
+    z-index: 1;
+}
+#sec_two aside {
+    padding: 20px;
+}
+#sec_two aside > div {
+    text-align: center;
+    margin: 40px 0;
+}
+#sec_two aside > div h2::after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-image: linear-gradient(45deg, #f19797, #f9dd94 100%);
+    transition: width 0.5s ease-in-out;
+}
+#sec_two aside > div h2:hover::after,
+#sec_two aside > div h2 :focus::after,
+#sec_two aside > div h2 :active::after {
+    width: 100%;
+}
+#sec_two aside img {
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#reviews {
+    background-color: #202020;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+    width: 100%;
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+}
+#reviews .slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}
+#reviews .slider__item article {
+    width: 70%;
+    margin: 0 auto;
+    font-weight: 700;
+}
+#reviews .slider__item li {
+    background-color: black;
+}
+#reviews .slider__item h2 {
+    font-weight: 700;
+    font-size: 28px;
+    margin: 20px 0 50px;
+}
+#reviews .avatar {
+    border-radius: 50%;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+#sec_four {
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    color: white;
+    background-color: #946fff;
+}
+#sec_four > div {
+    display: flex;
+    text-align: center;
+}
+#sec_four > div > p {
+    font-size: 24px;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    line-height: 1.2em;
+    padding: 50px;
+    width: 50%;
+}
+#sec_four span {
+    font-size: 28px;
+    font-weight: bold;
+}
+#sec_four .specifications {
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+#sec_four .specifications div {
+    width: 30%;
+}
+#sec_four .specifications h2 {
+    font-size: 28px;
+}
+#sec_four .specifications p {
+    font-size: 24px;
+}
+
+#form time {
+    display: block;
+    text-align: center;
+    margin-top: 3%;
+}
+#form .countdown-number {
+    border-radius: 3px;
+    background: #ac58af;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+}
+#form .countdown-time {
+    padding: 15px;
+    border-radius: 3px;
+    background: #5d205f;
+    display: inline-block;
+}
+#form .countdown-time p {
+    display: contents;
+}
+#form .countdown-text {
+    display: block;
+    padding-top: 5px;
+    font-size: 16px;
+}
+#form main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+#form main > div {
+    background-color: #a8a8a8;
+    border-radius: 20px;
+    height: 450px;
+    padding: 20px;
+    width: 30%;
+}
+#form .block-price {
+    margin: 10px auto;
+    background-color: white;
+    text-align: center;
+}
+#form .block-price img {
+    height: 300px;
+}
+#form .price {
+    height: 15%;
+    text-align: left;
+}
+#form .price li {
+    display: table-row-group;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 700;
+}
+#form .price li:nth-child(1)::after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(43, 43, 43));
+    transition: width 0.5s ease-in-out;
+}
+#form .price li:nth-child(1):hover::after,
+#form .price li:nth-child(1) :focus::after,
+#form .price li:nth-child(1) :active::after {
+    width: 100%;
+}
+#form .price li:nth-child(2) {
+    text-decoration: line-through;
+    font-size: 16px;
+    color: #a8a8a8;
+}
+#form #form {
+    background-color: #a8a8a8;
+}
+#form form fieldset {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#form form label {
+    font-weight: 600;
+    margin: 10px 0;
+}
+#form form input {
+    border-radius: 10px;
+    font-size: 20px;
+    height: 40px;
+    padding: 5px;
+    width: 100%;
+}
+#form form button {
+    background-color: #ff7373;
+    color: white;
+    width: 30%;
+    height: 30px;
+    margin: 10px auto;
+    border-radius: 0.3em;
+}
+#form form .input-wrapper {
+    display: inline-block;
+    position: relative;
+}
+#form form .input-wrapper:hover:after {
+    content: attr(data-title);
+    position: absolute;
+    right: 0px;
+    top: -20%;
+    font-size: 20px;
+    z-index: 1;
+    background: #ffffff;
+    font-size: 15px;
+    padding: 6px 33px;
+    border: 1px solid #000;
+    width: max-content;
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+    #sec-one img {
+        height: 300px;
+        width: auto;
+    }
+    #sec-one ul {
+        width: 100%;
+        font-size: 24px;
+    }
+    #sec_two > div img {
+        height: 300px;
+        width: auto;
+    }
+    #sec_four img {
+        height: 400px;
+        padding: 20px;
+    }
+    #form main div {
+        width: 40%;
+    }
+    #form button {
+        width: 100%;
+    }
+}
+@media (max-width: 992px) {
+    #sec-one {
+        padding-bottom: 20px;
+    }
+    #sec-one ul {
+        width: 100%;
+        font-size: 20px;
+    }
+    #sec-one img {
+        height: 300px;
+    }
+    #sec-one button {
+        width: 100%;
+    }
+    #sec_two > div img {
+        height: 300px;
+        width: auto;
+    }
+    #sec_four img {
+        height: 400px;
+    }
+    #sec_four p {
+        font-size: 20px;
+    }
+    #form main {
+        display: block;
+    }
+    #form main > div {
+        margin: 3% auto;
+        width: 70%;
+    }
+}
+@media (max-width: 800px) {
+    #sec-one img {
+        height: 200px;
+    }
+    #sec-one ul {
+        font-size: 16px;
+    }
+    #sec_two aside img {
+        width: 100px;
+        height: 100px;
+    }
+    #sec_four > div {
+        display: block;
+        height: auto;
+    }
+    #sec_four > div > p {
+        width: 100%;
+    }
+    #sec_four .specifications div {
+        width: 100%;
+        padding: 20px;
+        margin: auto;
+    }
+    #form form button {
+        width: 50%;
+    }
+    #form form input {
+        font-size: 16px;
+    }
+    #form form main > div {
+        height: 60%;
+    }
+}
+@media (max-width: 500px) {
+    #sec-one > div {
+        display: block;
+        text-align: center;
+    }
+    #sec-one img {
+        display: block;
+        width: auto;
+        margin: auto;
+    }
+    #sec_two > div img {
+        height: 200px;
+    }
+    #sec_two aside {
+        padding: 0;
+    }
+    #reviews .avatar {
+        height: 150px;
+        width: auto;
+    }
+    #form main > div {
+        width: 70%;
+        height: 50%;
+    }
+    #form .block-price img {
+        height: 200px;
+    }
+}
+@media (min-width: 320px) and (max-width: 400px) {
+    #sec_two > div img {
+        height: 150px;
+    }
+    #sec_two aside h2 {
+        font-size: 20px;
+    }
+    #sec_two aside img {
+        width: 70px;
+        height: 70px;
+    }
+    #sec_two button {
+        font-size: 18px;
+    }
+    #sec_four img {
+        height: 200px;
+    }
+    #sec_four div span {
+        font-size: 20px;
+    }
+    #sec_four div p {
+        padding: 0;
+        font-size: 16px;
+    }
+    #sec_four .specifications {
+        margin: 0;
+    }
+    #sec_four .specifications div p {
+        font-size: 16px;
+    }
+    #sec_four .specifications div h2 {
+        font-size: 18p;
+    }
+}
