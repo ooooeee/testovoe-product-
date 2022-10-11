@@ -367,7 +367,7 @@ h1 {
     }
     #form {
         main {
-            div {
+            >div {
                 width: 40%;
             }
         }
@@ -410,11 +410,16 @@ h1 {
         // button {
         //     width: 50%;
         // }
+        .block-price{
+            img{
+                height: 250px;
+            }
+        }
         main {
             display: block;
             > div {
                 margin: 3% auto;
-                width: 70%;
+                width: 50%;
             }
         }
     }

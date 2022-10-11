@@ -362,7 +362,7 @@ h1 {
         height: 400px;
         padding: 20px;
     }
-    #form main div {
+    #form main > div {
         width: 40%;
     }
     #form button {
@@ -393,12 +393,15 @@ h1 {
     #sec_four p {
         font-size: 20px;
     }
+    #form .block-price img {
+        height: 250px;
+    }
     #form main {
         display: block;
     }
     #form main > div {
         margin: 3% auto;
-        width: 70%;
+        width: 50%;
     }
 }
 @media (max-width: 800px) {
