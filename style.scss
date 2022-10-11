@@ -103,9 +103,11 @@ h1 {
         }
     }
     h2 {
-        font-family: "Ubuntu", sans-serif;
-        font-style: italic;
-        font-size: 24px;
+        font: {
+            family: "Ubuntu", sans-serif;
+            style: italic;
+            size: 24px;
+        }
         color: white;
     }
     button {
@@ -143,12 +145,12 @@ h1 {
 
 #reviews {
     background-color: #202020;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
     overflow: hidden;
     position: relative;
     padding: 20px 0;
     width: 100%;
-    font-family: "Ubuntu", sans-serif;
-    color: white;
     .slider__item {
         flex: 0 0 100%;
         max-width: 100%;
@@ -175,8 +177,10 @@ h1 {
 }
 
 #sec_four {
-    font-family: "Ubuntu", sans-serif;
-    font-style: normal;
+    font: {
+        family: "Ubuntu", sans-serif;
+        style: normal;
+    }
     color: white;
     background-color: #946fff;
     > div {
@@ -185,11 +189,13 @@ h1 {
         > p {
             font-size: 24px;
             height: fit-content;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 10%;
             line-height: 1.2em;
             padding: 50px;
+            margin: {
+                right: auto;
+                left: auto;
+                top: 10%;
+            }
             width: 50%;
         }
     }
@@ -313,12 +319,12 @@ h1 {
             width: 100%;
         }
         button {
+            border-radius: 0.3em;
             background-color: #ff7373;
             color: white;
-            width: 30%;
             height: 30px;
             margin: 10px auto;
-            border-radius: 0.3em;
+            width: 30%;
         }
         .input-wrapper {
             display: inline-block;
@@ -367,7 +373,7 @@ h1 {
     }
     #form {
         main {
-            >div {
+            > div {
                 width: 40%;
             }
         }
@@ -407,11 +413,8 @@ h1 {
         }
     }
     #form {
-        // button {
-        //     width: 50%;
-        // }
-        .block-price{
-            img{
+        .block-price {
+            img {
                 height: 250px;
             }
         }
@@ -466,8 +469,8 @@ h1 {
             input {
                 font-size: 16px;
             }
-            main{
-                >div{
+            main {
+                > div {
                     height: 60%;
                 }
             }
@@ -509,11 +512,6 @@ h1 {
                 height: 50%;
             }
         }
-        // form{
-        //     input{
-        //         font-size: 16px;
-        //     }
-        // }
         .block-price {
             img {
                 height: 200px;
@@ -523,22 +521,22 @@ h1 {
 }
 
 @media (min-width: 320px) and (max-width: 400px) {
-    #sec_two{
-        >div{
-            img{
+    #sec_two {
+        > div {
+            img {
                 height: 150px;
             }
         }
-        aside{
-            h2{
+        aside {
+            h2 {
                 font-size: 20px;
             }
-            img{
+            img {
                 width: 70px;
                 height: 70px;
             }
         }
-        button{
+        button {
             font-size: 18px;
         }
     }
